@@ -1,0 +1,235 @@
+<wb_static_blocks>
+<!-- static block configuration -->
+    <block>
+        <id_wbstaticblock>1</id_wbstaticblock>
+        <identify>wb_Topleft</identify>
+        <hook_position>displayNav1</hook_position>
+        <name_module></name_module>
+        <hook_module></hook_module>
+        <wborder>0</wborder>
+        <insert_module>0</insert_module>
+        <active>0</active>
+        <showhook>1</showhook>
+    </block>
+    <block>
+        <id_wbstaticblock>2</id_wbstaticblock>
+        <identify>wb_Menu</identify>
+        <hook_position>displayNavFullWidth</hook_position>
+        <name_module></name_module>
+        <hook_module></hook_module>
+        <wborder>0</wborder>
+        <insert_module>0</insert_module>
+        <active>0</active>
+        <showhook>1</showhook>
+    </block>
+    <block>
+        <id_wbstaticblock>3</id_wbstaticblock>
+        <identify>wb_Services</identify>
+        <hook_position>displayHome</hook_position>
+        <name_module></name_module>
+        <hook_module></hook_module>
+        <wborder>0</wborder>
+        <insert_module>0</insert_module>
+        <active>0</active>
+        <showhook>1</showhook>
+    </block>
+    <block>
+        <id_wbstaticblock>4</id_wbstaticblock>
+        <identify>foot_Tag</identify>
+        <hook_position>displayTopcolumn</hook_position>
+        <name_module></name_module>
+        <hook_module></hook_module>
+        <wborder>0</wborder>
+        <insert_module>0</insert_module>
+        <active>0</active>
+        <showhook>1</showhook>
+    </block>
+    <block>
+        <id_wbstaticblock>5</id_wbstaticblock>
+        <identify>foot_payment</identify>
+        <hook_position>displayFooterAfter</hook_position>
+        <name_module></name_module>
+        <hook_module></hook_module>
+        <wborder>0</wborder>
+        <insert_module>0</insert_module>
+        <active>0</active>
+        <showhook>1</showhook>
+    </block>
+<!-- block lang configuration -->
+        <block_lang>
+        <id_wbstaticblock>1</id_wbstaticblock>
+        <id_lang>1</id_lang>
+        <title>Wb Top Left</title>
+        <description>
+             <![CDATA[<ul>
+<li><span>Get 30% Off On Selected Items</span></li>
+</ul>]]>
+        </description>
+        </block_lang>
+        <block_lang>
+        <id_wbstaticblock>2</id_wbstaticblock>
+        <id_lang>1</id_lang>
+        <title>Wb Menu</title>
+        <description>
+             <![CDATA[<div class="rightmenu col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 text-xs-left hidden-md-down">
+<ul class="statmenu hidden-sm-down">
+<li><a href="contact-us">contact us</a></li>
+<li><a href="new-products">latest</a></li>
+<li><a href="sitemap">sitemap</a></li>
+<li><a href="prices-drop">special</a></li>
+<li><a href="best-sales">bestseller</a></li>
+</ul>
+</div>]]>
+        </description>
+    </block_lang>
+        <block_lang>
+        <id_wbstaticblock>3</id_wbstaticblock>
+        <id_lang>1</id_lang>
+        <title>Wb Services</title>
+        <description>
+             <![CDATA[<div class="container">
+<div class="h-ser">
+<div class="row ser-mbt deliveryinfo">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ses">
+<ul>
+<li class="ser-svg"><svg width="41px" height="40px"><use xlink:href="#suprt"></use></svg></li>
+<li class="ser-t">
+<h4>24/7 free support</h4>
+<p>Passage of Lorem Ipsum</p>
+</li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ses">
+<ul>
+<li class="ser-svg"><svg width="41px" height="40px"><use xlink:href="#safe"></use></svg></li>
+<li class="ser-t">
+<h4>secure payment</h4>
+<p>Passage of Lorem Ipsum</p>
+</li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  ses">
+<ul>
+<li class="ser-svg"><svg width="50px" height="40px"><use xlink:href="#gift"></use></svg></li>
+<li class="ser-t">
+<h4>special gift cards</h4>
+<p>Passage of Lorem Ipsum</p>
+</li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ser-s ses">
+<ul>
+<li class="ser-svg"><svg width="41px" height="40px"><use xlink:href="#cust"></use></svg></li>
+<li class="ser-t">
+<h4>world wide shipping</h4>
+<p>Passage of Lorem Ipsum</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>]]>
+        </description>
+    </block_lang>
+    <block_lang>
+        <id_wbstaticblock>4</id_wbstaticblock>
+        <id_lang>1</id_lang>
+        <title>Foot Tag</title>
+        <description>
+             <![CDATA[<div class="row fbtm">
+<div class="foot-tag col-sm-8 col-xs-12">
+<div class="fbottom">
+<h3 class="d-inline-block float-xs-left">fashion-</h3>
+<ul class="header-link">
+<li><a href="#">sofa</a></li>
+<li><a href="#">chair</a></li>
+<li><a href="#">dining table</a></li>
+<li><a href="#">desk</a></li>
+<li><a href="#">table</a></li>
+<li><a href="#">livingroom</a></li>
+<li><a href="#">bathroom</a></li>
+<li><a href="#">badroom</a></li>
+</ul>
+</div>
+<div class="fbottom">
+<h3 class="d-inline-block float-xs-left">furniture-</h3>
+<ul class="header-link">
+<li><a href="#">stool</a></li>
+<li><a href="#">table lamp</a></li>
+<li><a href="#">night stand</a></li>
+<li><a href="#">pillow</a></li>
+<li><a href="#">bar table</a></li>
+<li><a href="#">tv</a></li>
+<li><a href="#">radio</a></li>
+<li><a href="#">clock</a></li>
+<li><a href="#">computer desk</a></li>
+</ul>
+</div>
+<div class="fbottom">
+<h3 class="d-inline-block float-xs-left">electronic-</h3>
+<ul class="header-link">
+<li><a href="#">chair </a></li>
+<li><a href="#">stool</a></li>
+<li><a href="#">bed</a></li>
+<li><a href="#">stool</a></li>
+<li><a href="#">table lamp</a></li>
+<li><a href="#">night stand</a></li>
+<li><a href="#">pillow</a></li>
+<li><a href="#">bar table</a></li>
+<li><a href="#">stool</a></li>
+<li><a href="#">table lamp</a></li>
+</ul>
+</div>
+</div>
+<div class="col-sm-4 col-xs-12 text-xs-center">
+<div>
+<h5 class="c-info">download this app</h5>
+<ul class="list-inline list-unstyled foot-app d-inline-block">
+<li>
+<div class="fb1"></div>
+</li>
+<li>
+<div class="fb2"></div>
+</li>
+</ul>
+</div>
+</div>
+</div>]]>
+        </description>
+    </block_lang>
+    <block_lang>
+        <id_wbstaticblock>5</id_wbstaticblock>
+        <id_lang>1</id_lang>
+        <title>Wb Payment</title>
+        <description>
+             <![CDATA[<ul class="list-inline list-unstyled foot-payment">
+<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+</ul>]]>
+        </description>
+    </block_lang>
+
+<!-- block shop configuration -->
+    <block_shop>
+        <id_wbstaticblock>1</id_wbstaticblock>
+        <id_shop>1</id_shop>
+    </block_shop>
+    <block_shop>
+        <id_wbstaticblock>2</id_wbstaticblock>
+        <id_shop>1</id_shop>
+    </block_shop>
+    <block_shop>
+        <id_wbstaticblock>3</id_wbstaticblock>
+        <id_shop>1</id_shop>
+    </block_shop>
+    <block_shop>
+        <id_wbstaticblock>4</id_wbstaticblock>
+        <id_shop>1</id_shop>
+    </block_shop>
+    <block_shop>
+        <id_wbstaticblock>5</id_wbstaticblock>
+        <id_shop>1</id_shop>
+    </block_shop>
+</wb_static_blocks>
