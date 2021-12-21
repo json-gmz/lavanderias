@@ -3701,3 +3701,14 @@ body.active .sidenav {
     }
 } 
 /* box layout end */
+
+
+
+/* Developer lavanderias.com.co */
+.imglatest.leftbannerap1 {
+    display: none!important;
+}
+
+section.left-product.wbfepro {
+    display: none!important;
+}
