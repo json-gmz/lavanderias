@@ -1,0 +1,22 @@
+# Cache, temp and personal files
+
+/.htaccess
+*.log
+npm-debug.log.*
+.sass-cache/
+/cache/*
+download/*
+/img/*
+/log/*
+/upload/*
+/vendor/*
+!/vendor/.htaccess
+docs/phpdoc-sf/
+composer.lock
+
+/admin*/autoupgrade/*
+/admin*/backups/*
+/admin*/import/*
+
+/var/*
+var/*

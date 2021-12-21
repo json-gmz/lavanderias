@@ -159,6 +159,167 @@
     {block name='hook_before_body_closing_tag'}
       {hook h='displayBeforeBodyClosingTag'}
     {/block}
+
+    <input type="hidden" value="{{$customer.id_default_group}}" id="id_group" />
+    <input type="hidden" value="{{$customer.id}}" id="id_customer"/>
+    <input type="hidden" id="click_modal" data-toggle="modal" data-target="#modalConfirmation">
+    <div class="modal fade" id="modalConfirmation" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Información Enviada</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/Yes_Check_Circle.png" class="img-section" width="30%">
+            <p class="info-text">
+              Se ha realizado el registro exitosamente
+              <br>
+              Nos estaremos contactando contigo para realizar nuestra entrevista
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="ok_modal" class="btn-style btn btn-danger" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <script type="text/javascript">
+    var id_mom = "{$customer.id}";
+    var email_mom = "{$customer.email}";
+    var group_mom = "{$customer.id_default_group}";
+
+    $(document).ready(function(){
+      $("#nav-message-alert").hide();
+      var id_group = $("#id_group").val();
+
+      $('#save-mom').prop('disabled', false);
+      $("#mom-form").find(".hidden-log").hide();
+
+      if (id_group == 10) {
+          $("#nav-message-alert").show();
+          $(".card_user").hide();
+          $(".addresses-footer").hide();
+          $('#save-mom').prop('disabled', false);
+          $("#mom-form").find(".hidden-log").hide();
+      } else if (id_group == 1) {
+          $('#save').prop('disabled', true);
+          $('#save-mom').prop('disabled', true);
+          $("#mom-form").find(".hidden-log").show();
+      } else {
+        $(".card_mom").hide();
+        $('#save').prop('disabled', false);
+        $("#customer-form").find(".hidden-log").hide();
+      }
+    });
+
+    $("#switch-log").hide();
+    $("#history-mom").hide();
+    $("#balance_score").hide();
+    $("#order-slips-link").hide();
+    $("#terms-conditions-mothers").hide();
+
+    var switchStatus = false;  
+    var id_group = $("#id_group").val();
+    var id_customer = $("#id_customer").val();
+    var status = $("#togBtn").val();
+
+    if(id_group == 10){
+      $("#switch-log").show();
+      $("#history-mom").show();
+      $("#history-link").hide();
+      $("#discounts-link").hide();
+      $("#balance_score").show();
+      $("#terms-conditions-mothers").show();
+      $(".cat-title").hide();
+
+      $.ajax({
+        method: "POST",
+        url: "/ajax/ApiSelectActiveService.php",
+        data : {
+          'id_customer' : id_customer
+        },
+      }).done(function(response) {
+         if(response == 1){
+          $("#togBtn").attr("checked","checked");
+         } else {
+          $("#togBtn").removeAttr("checked","checked");
+         }
+      });
+    }
+
+    $("#togBtn").on('change', function() {
+        switchStatus = $(this).is(':checked');
+        if (switchStatus == true) {
+            $.ajax({
+              method: "POST",
+              url: "/ajax/ApiSetActiveService.php",
+              data : {
+                'active_service' : 1,
+                'id_customer' : id_customer
+              },
+            }).done(function(response) {
+
+            });
+        } else {
+          $.ajax({
+              method: "POST",
+              url: "/ajax/ApiSetActiveService.php",
+              data : {
+                'active_service' : 0,
+                'id_customer' : id_customer
+              },
+            }).done(function(response) {
+
+            });
+        }
+        location.reload();
+    });
+  </script>
+
+  <literal>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = window.location.search.substring(1),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+        };
+
+        var data = getUrlParameter('momVerified');
+        if ( data == 2 && id_mom != "" ) {
+          if ( id_mom != "" && email_mom != "" && group_mom != "" ) {
+            $.ajax({
+              method: "POST",
+              url: "/ajax/ApiSetInactiveMom.php",
+              data : {
+                'mom' : id_mom,
+                'email': email_mom,
+                'group': group_mom
+              },
+            }).success(function(response) {  });
+          }
+          $("#click_modal").click();
+        }
+
+        $("#modalConfirmation").click(function(){
+          var getUrl = window.location;
+          var urlHome = getUrl .protocol + "//" + getUrl.host + "/";
+          window.location.href = urlHome;
+        });
+      });
+    </script>
+  </literal>
 
 </html>
