@@ -5,9 +5,11 @@
 npm-debug.log.*
 .sass-cache/
 /cache/*
+cache/*
 download/*
 /img/*
 /log/*
+log/*
 /upload/*
 /vendor/*
 !/vendor/.htaccess
@@ -20,7 +22,7 @@ composer.lock
 
 /var/*
 var/*
-*.php
+
 /var/cache/prod/appProdProjectContainer.php
 /var/cache/prod/smarty/compile/30/5a/43/305a43bb7fa992d420202048760c8fe7c37adb8c_0.file.end.tpl.php
 /var/cache/prod/smarty/compile/4e/77/89/4e778913a3a1574d1280f61ba9cd22b4fc179c74_0.file.faviconbo.tpl.php
