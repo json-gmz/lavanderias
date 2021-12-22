@@ -273,10 +273,10 @@ class CustomerController extends AbstractAdminController
 
             switch ( $filesCustomer[$i]['filename'] ) {
                 case $customerId.'_dni':
-                    $filesCustomer[$i]['filetype'] = 'Identification document';
+                    $filesCustomer[$i]['filetype'] = 'Chamber of commerce';
                     break;
                 case $customerId.'_criminal':
-                    $filesCustomer[$i]['filetype'] = 'Criminal record';
+                    $filesCustomer[$i]['filetype'] = 'Franchise photo';
                     break;
                 case $customerId.'_sons':
                     $filesCustomer[$i]['filetype'] = 'Professional card';
