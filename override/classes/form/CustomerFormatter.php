@@ -149,10 +149,13 @@ class CustomerFormatterCore implements FormFormatterInterface
                 $this->translator->trans('Cedula Extranjeria', [], 'Shop.Theme.Customeraccount'),
                 $this->translator->trans('Cedula Extranjeria', [], 'Shop.Theme.Customeraccount')
             )
-
             ->addAvailableValue(
                 $this->translator->trans('Pasaporte', [], 'Shop.Theme.Customeraccount'),
                 $this->translator->trans('Pasaporte', [], 'Shop.Theme.Customeraccount')
+            )
+            ->addAvailableValue(
+                $this->translator->trans('NIT', [], 'Shop.Theme.Customeraccount'),
+                $this->translator->trans('NIT', [], 'Shop.Theme.Customeraccount')
             )
             ->setRequired(true);
 

@@ -166,22 +166,24 @@
     <input type="hidden" id="click_modal" data-toggle="modal" data-target="#modalConfirmation">
     <div class="modal fade" id="modalConfirmation" role="dialog">
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Información Enviada</h4>
+        <center>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">{l s='Title modal registration' d='Shop.Theme.Customeraccount'}</h4>
+            </div>
+            <div class="modal-body">
+              <img src="img/Yes_Check_Circle.png" class="img-section" width="30%">
+              <p class="info-text">
+                {l s='First message registration' d='Shop.Theme.Customeraccount'}
+                <br>
+                {l s='Second message registration' d='Shop.Theme.Customeraccount'}
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="ok_modal" class="btn-style btn btn-danger" data-dismiss="modal">{l s='Close' d='Shop.Theme.Customeraccount'}</button>
+            </div>
           </div>
-          <div class="modal-body">
-            <img src="img/Yes_Check_Circle.png" class="img-section" width="30%">
-            <p class="info-text">
-              Se ha realizado el registro exitosamente
-              <br>
-              Nos estaremos contactando contigo para realizar nuestra entrevista
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" id="ok_modal" class="btn-style btn btn-danger" data-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
+        </center>
       </div>
     </div>
   </body>

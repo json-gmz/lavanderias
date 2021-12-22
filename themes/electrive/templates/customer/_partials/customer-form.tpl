@@ -36,7 +36,7 @@
         <center>
           <h5 class="mb-0">
             <button class="btn btn-link collapsed">
-              {l s='Mom' d='Shop.Theme.Customeraccount'}
+              {l s='Laundry' d='Shop.Theme.Customeraccount'}
               {*if $customer.id == "" || $customer.id == "null" }
                 <br>
                 <small>{l s='Si eres madre, registrate acá' d='Shop.Theme.Customeraccount'}</small>
@@ -47,6 +47,11 @@
       </div>
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
         <div class="card-body">
+          <input type="hidden" name="textTradename" id="textTradename" value="{l s='Tradename' d='Shop.Theme.Customeraccount'}">
+          <input type="hidden" name="textBusinessName" id="textBusinessName" value="{l s='Business name' d='Shop.Theme.Customeraccount'}">
+          <input type="hidden" name="textEnterValidData" id="textEnterValidData" value="{l s='Please enter a valid data' d='Shop.Theme.Customeraccount'}">
+          <input type="hidden" name="textValidData" id="textValidData" value="{l s='Valid' d='Shop.Theme.Customeraccount'}">
+          <input type="hidden" name="textNumber" id="textNumber" value="{l s='Number' d='Shop.Theme.Customeraccount'}">
           <br>
           <form action="{block name='customer_form_actionurl'}{$action}{/block}" id="mom-form" class="js-customer-form" method="post" enctype="multipart/form-data">
             <section>
@@ -85,29 +90,27 @@
                   </div>
                 </div>
                 <div class="form-group row hidden-log">
-                  <label class="col-md-3 form-control-label required">{l s='Identification document' d='Shop.Theme.Customeraccount'}</label>
+                  <label class="col-md-3 form-control-label required">{l s='Chamber of commerce' d='Shop.Theme.Customeraccount'}</label>
                   <div class="col-md-6">
-                    <label for="fileone" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> Seleccionar Archivo</label>
+                    <label for="fileone" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> {l s='Select File' d='Shop.Theme.Customeraccount'}</label>
                     <input class="form-control" id="fileone" name="fileone" type="file" accept="image/png, image/jpeg, image/jpg, application/pdf" style="display: none;">
-                    <br>
-                    <small>({l s='Ambas caras en un solo archivo' d='Shop.Theme.Customeraccount'})</small>
                     <br>
                     <label id="fileone-name" class="custom-file-name"></label>
                   </div>
                 </div>
                 <div class="form-group row hidden-log">
-                  <label class="col-md-3 form-control-label required">{l s='Criminal record' d='Shop.Theme.Customeraccount'}</label>
+                  <label class="col-md-3 form-control-label required">{l s='Franchise photo' d='Shop.Theme.Customeraccount'}</label>
                   <div class="col-md-6">
-                    <label for="filetwo" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> Seleccionar Archivo</label>
+                    <label for="filetwo" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> {l s='Select File' d='Shop.Theme.Customeraccount'}</label>
                     <input class="form-control" id="filetwo" name="filetwo" type="file" accept="image/png, image/jpeg, image/jpg, application/pdf" style="display: none;">
                     <br>
                     <label id="filetwo-name" class="custom-file-name"></label>
                   </div>
                 </div>
-                <div class="form-group row hidden-log">
+                {*<div class="form-group row hidden-log">
                   <label class="col-md-3 form-control-label required">{l s='Professional card' d='Shop.Theme.Customeraccount'}</label>
                   <div class="col-md-6">
-                    <label for="filetree" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> Seleccionar Archivo</label>
+                    <label for="filetree" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> {l s='Select File' d='Shop.Theme.Customeraccount'}</label>
                     <input class="form-control" id="filetree" name="filetree" type="file" accept="image/png, image/jpeg, image/jpg, application/pdf" style="display: none;">
                     <br>
                     <small>({l s='Opcional.' d='Shop.Theme.Customeraccount'} {l s='Solo si aplica' d='Shop.Theme.Customeraccount'})</small>
@@ -122,14 +125,14 @@
                     {l s='Imagen de tu producto' d='Shop.Theme.Customeraccount'}
                   </label>
                   <div class="col-md-6">
-                    <label for="filefour" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> Seleccionar Archivo</label>
+                    <label for="filefour" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> {l s='Select File' d='Shop.Theme.Customeraccount'}</label>
                     <input class="form-control" id="filefour" name="filefour" type="file" accept="video/mp4, video/x-m4v, video/*, image/png, image/jpeg, image/jpg" style="display: none;">
                     <br>
                     <small>({l s='Opcional.' d='Shop.Theme.Customeraccount'} {l s='Maximum video size 1 minute' d='Shop.Theme.Customeraccount'})</small>
                     <br>
                     <label id="filefour-name" class="custom-file-name"></label>
                   </div>
-                </div>
+                </div>*}
                 <div class="row hidden-log">
                     <label class="col-md-3 form-control-label"></label>
                     <div class="col-md-6">
@@ -138,7 +141,7 @@
                             <span><i class="material-icons checkbox-checked"></i></span>
                             <label>
                               <a href="/content/2-politica-de-privacidad" title="Nuestra política de privacidad">
-                                {l s='I accept the treatment of my data and files by + Madres' d='Shop.Theme.Customeraccount'}
+                                {l s='I accept the treatment of my data and files' d='Shop.Theme.Customeraccount'}
                               </a>
                             </label>
                           </span>
@@ -223,7 +226,7 @@
                       <span><i class="material-icons checkbox-checked"></i></span></div>
                       <div class="col-xs-10 col-sm-10">
                         <label for="terms">
-                          Acepto que he leído y entiendo los <a id="link-cms-page-3-2" class="cms-page-link" target="_blank" href="/content/3-terminos-y-condiciones-de-uso">términos y condiciones</a> del servicio junto con la <a id="link-cms-page-3-2" class="cms-page-link" target="_blank" href="/content/2-politica-de-privacidad">política de tratamiento de datos personales</a>.
+                          {l s='I accept that I have read and understand the' d='Shop.Theme.Customeraccount'} <a id="link-cms-page-3-2" class="cms-page-link" target="_blank" href="/content/3-terminos-y-condiciones-de-uso">{l s='terms and conditions' d='Shop.Theme.Customeraccount'}</a> {l s='of the service together with the' d='Shop.Theme.Customeraccount'} <a id="link-cms-page-3-2" class="cms-page-link" target="_blank" href="/content/2-politica-de-privacidad">{l s='personal data treatment policy' d='Shop.Theme.Customeraccount'}</a>.
                         </label>
                       </div>
                     </span>
@@ -274,14 +277,23 @@
   <script>
     $(function() {
       $("input[name='dni']").attr("type","text");
-      $("input[name='dni']").attr("onkeyup","this.value=this.value.replace(/[^\\d]/,'')");
+      $("#customer-form").find("input[name='dni']").attr("onkeyup","this.value=this.value.replace(/[^\\d]/,'')");
+      $("#mom-form").find("input[name='dni']").attr("onkeydown","return ( event.ctrlKey || event.altKey || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) || (95<event.keyCode && event.keyCode<106) || (event.keyCode==8) || (event.keyCode==9) || (event.keyCode>34 && event.keyCode<40) || (event.keyCode==46) || (event.keyCode==109) || (event.keyCode==189) )");
       $("input[name='optin']").parents(".form-group").hide();
       $("#mom-form").find(".custom-checkbox").parents(".form-group").hide();
-      $("#mom-form").find("input[name='id_gender'][value='2']").click();
+      $("#mom-form").find("input[name='id_gender'][value='1']").click();
       $("#mom-form").find("input[name='id_gender']").parents(".form-group").hide();
+      $("#mom-form").find("input[name='birthday']").parents(".form-group").hide();
       $("#mom-form").find(".cms-page-link").attr("href", "/content/6-terminos-y-condiciones-para-madres");
       $("#mom-form").find(".cms-page-link").html("Acepto términos y condiciones para madres");
       $("input[name='phone_main']").val("{$customer.phone_main}");
+
+      $("#mom-form").find("input[name='firstname']").parents(".form-group").find(".form-control-label").html( $("#textTradename").val() );
+      $("#mom-form").find("input[name='lastname']").parents(".form-group").find(".form-control-label").html( $("#textBusinessName").val() );
+      $("#mom-form").find("input[name='dni']").parents(".form-group").find(".form-control-label").html( $("#textNumber").val() );
+      $("#mom-form").find("select[name='typedni'] option").eq(1).remove();
+      $("#mom-form").find("select[name='typedni'] option").eq(1).remove();
+      $("#customer-form").find("select[name='typedni'] option").eq(4).remove();
     });
   </script>
   <script type="text/javascript">
@@ -316,36 +328,36 @@
 
         $('input[name ="firstname"]').focusout(function(){
           var firstname = $(this).val();
-          const pattern = new RegExp('^[A-Z ]+$', 'i');
+          const pattern = new RegExp('^[A-Z. ]+$', 'i');
 
           if(!pattern.test(firstname)){
             $('div #name_failed').empty();
             $('div #name_ok').empty();
-            $('input[name ="firstname"]').after('<div id="name_failed" style="color:red;">Por favor ingrese un Nombre valido</div>');
+            $('input[name ="firstname"]').after('<div id="name_failed" style="color:red;">'+$("#textEnterValidData").val()+'</div>');
             $(this).css("border-color", "red");
           }
           else{
             $('div #name_failed').empty();
             $('div #name_ok').empty();
-            $('input[name ="firstname"]').after('<div id="name_ok" style="color:green;">Nombre Valido</div>');
+            $('input[name ="firstname"]').after('<div id="name_ok" style="color:green;">'+$("#textValidData").val()+'</div>');
             $(this).css("border-color", "green");
           }
         });
 
         $('input[name ="lastname"]').focusout(function(){
           var lastname = $(this).val();
-          const pattern = new RegExp('^[A-Z ]+$', 'i');
+          const pattern = new RegExp('^[A-Z. ]+$', 'i');
 
           if(!pattern.test(lastname)){
             $('div #lastname_failed').empty();
             $('div #lastname_ok').empty();
-            $('input[name ="lastname"]').after('<div id="lastname_failed" style="color:red;">Por favor ingrese un Apellido valido</div>');
+            $('input[name ="lastname"]').after('<div id="lastname_failed" style="color:red;">'+$("#textEnterValidData").val()+'</div>');
             $(this).css("border-color", "red");
           }
           else{
             $('div #lastname_failed').empty();
             $('div #lastname_ok').empty();
-            $('input[name ="lastname"]').after('<div id="lastname_ok" style="color:green;">Apellido Valido</div>');
+            $('input[name ="lastname"]').after('<div id="lastname_ok" style="color:green;">'+$("#textValidData").val()+'</div>');
             $(this).css("border-color", "green");
           }
         });
@@ -356,13 +368,13 @@
           if(!validateEmail(email)){
             $('div #email_failed').empty();
             $('div #email_ok').empty();
-            $('input[name ="email"]').after('<div id="email_failed" style="color:red;">Por favor ingrese un Email valido</div>');
+            $('input[name ="email"]').after('<div id="email_failed" style="color:red;">'+$("#textEnterValidData").val()+'</div>');
             $(this).css("border-color", "red");
           }
           else{
             $('div #email_failed').empty();
             $('div #email_ok').empty();
-            $('input[name ="email"]').after('<div id="email_ok" style="color:green;">Email Valido</div>');
+            $('input[name ="email"]').after('<div id="email_ok" style="color:green;">'+$("#textValidData").val()+'</div>');
             $(this).css("border-color", "green");
           }
         });
