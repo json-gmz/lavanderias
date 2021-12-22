@@ -6,7 +6,7 @@
 class Address extends AddressCore
 {
     /** @var string Stratum */
-    public $stratum;
+    // public $stratum;
 
     /**
      * @see ObjectModel::$definition
@@ -37,7 +37,7 @@ class Address extends AddressCore
             'deleted' => array('type' => self::TYPE_BOOL, 'validate' => 'isBool', 'copy_post' => false),
             'date_add' => array('type' => self::TYPE_DATE, 'validate' => 'isDate', 'copy_post' => false),
             'date_upd' => array('type' => self::TYPE_DATE, 'validate' => 'isDate', 'copy_post' => false),
-            'stratum' => array('type' => self::TYPE_INT, 'validate' => '', 'required' => true, 'size' => 1),
+            // 'stratum' => array('type' => self::TYPE_INT, 'validate' => '', 'required' => true, 'size' => 1),
         ),
     );
 }

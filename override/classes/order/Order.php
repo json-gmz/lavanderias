@@ -98,7 +98,7 @@ class Order extends OrderCore
 			$servicesPending = "0";
 		}
 
-		$sql = '
+		/*$sql = '
 			SELECT
 				c.id_customer, CONCAT(c.firstname," ",c.lastname) name, c.email, c.product_service,
 				CONCAT(a.address1,", ",a.address2,", ",a.city) AS address, a.phone, a.stratum,
@@ -109,15 +109,41 @@ class Order extends OrderCore
 			WHERE c.service IN (' . $servicesPending . ')
 			AND c.active_service = 1
 			AND c.active = 1
+		';*/
+
+		$sql = '
+			SELECT
+				c.id_customer, CONCAT(c.firstname," ",c.lastname) name, c.email, c.product_service,
+				CONCAT(a.address1,", ",a.address2,", ",a.city) AS address, a.phone,
+				c.service, cl.name nameservice, "0" AS selected
+			FROM ' . _DB_PREFIX_ . 'customer c
+			INNER JOIN ' . _DB_PREFIX_ . 'address a ON (c.id_customer = a.id_customer)
+			INNER JOIN ' . _DB_PREFIX_ . 'category_lang cl ON (c.service = cl.id_category AND cl.id_lang = 1)
+			WHERE c.service IN (' . $servicesPending . ')
+			AND c.active_service = 1
+			AND c.active = 1
 		';
 
 		if ( $this->id_mom != "" && $this->id_mom != 0 ) {
-			$sql .= '
+			/*$sql .= '
 				UNION
 
 				SELECT
 					c.id_customer, CONCAT(c.firstname," ",c.lastname) name, c.email, c.product_service,
 					CONCAT(a.address1,", ",a.address2,", ",a.city) AS address, a.phone, a.stratum,
+					c.service, cl.name nameservice, "1" AS selected
+				FROM ' . _DB_PREFIX_ . 'customer c
+				INNER JOIN ' . _DB_PREFIX_ . 'address a ON (c.id_customer = a.id_customer)
+				INNER JOIN ' . _DB_PREFIX_ . 'category_lang cl ON (c.service = cl.id_category AND cl.id_lang = 1)
+				WHERE c.id_customer IN (' . $this->id_mom . ')
+			';*/
+
+			$sql .= '
+				UNION
+
+				SELECT
+					c.id_customer, CONCAT(c.firstname," ",c.lastname) name, c.email, c.product_service,
+					CONCAT(a.address1,", ",a.address2,", ",a.city) AS address, a.phone,
 					c.service, cl.name nameservice, "1" AS selected
 				FROM ' . _DB_PREFIX_ . 'customer c
 				INNER JOIN ' . _DB_PREFIX_ . 'address a ON (c.id_customer = a.id_customer)

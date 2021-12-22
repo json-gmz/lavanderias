@@ -96,7 +96,7 @@ class CustomerAddressFormatterCore implements FormFormatterInterface
                     if ($this->country->need_identification_number) {
                         $formField->setRequired(true);
                     }
-                } elseif ($field === 'stratum') {
+                } /*elseif ($field === 'stratum') {
                     $formField->setType('select');
                     $formField->setLabel(
                         $this->translator->trans(
@@ -114,7 +114,7 @@ class CustomerAddressFormatterCore implements FormFormatterInterface
                         '6' => 'Estrato 6',
                     ]);
                     $formField->setRequired(true);
-                }
+                }*/
             } elseif (count($fieldParts) === 2) {
                 list($entity, $entityField) = $fieldParts;
 

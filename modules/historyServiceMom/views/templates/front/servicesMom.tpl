@@ -118,10 +118,10 @@
             <p class="info-text col-lg-6 col-sm-6 col-xs-6 text-right">{l s='Telefono' d='Shop.Theme.Customeraccount'}</p>
             <p class="info-text col-lg-6 col-sm-6 col-xs-6 text-left" id="phone_customer"></p>
          </div>
-         <div class="row">
+         {*<div class="row">
             <p class="info-text col-lg-6 col-sm-6 col-xs-6 text-right">{l s='Stratum' d='Shop.Theme.Customeraccount'}</p>
             <p class="info-text col-lg-6 col-sm-6 col-xs-6 text-left" id="stratum_customer"></p>
-         </div>
+         </div>*}
          <table class="product" width="100%" cellpadding="4" cellspacing="0">
             <thead>
                <tr class="header-table">
@@ -196,7 +196,7 @@
             var email =  obj[0].email;
             var address_delivery = obj[0].address+", "+obj[0].city;
             var phone = obj[0].phone;
-            var stratum = obj[0].stratum;
+            // var stratum = obj[0].stratum;
 
             var status_service = obj[0].status_service;
             
@@ -211,7 +211,7 @@
             $("#customer_email").html(email);
             $("#address_delivery").html(address_delivery);
             $("#phone_customer").html(phone);
-            $("#stratum_customer").html(stratum);
+            // $("#stratum_customer").html(stratum);
             
             var keys = Object.keys(obj);
             for(let i = 0; i < keys.length; i++){

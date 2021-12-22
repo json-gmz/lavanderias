@@ -289,7 +289,7 @@
                   <th>Products</th>
                   <th>Address</th>
                   <th>Phone</th>
-                  <th>Stratum</th>
+                  {*<th>Stratum</th>*}
                   <th>Action</th>
                 </tr>
               </thead>
@@ -309,7 +309,7 @@
                       <td>{$mom['product_service']}</td>
                       <td>{$mom['address']}</td>
                       <td>{$mom['phone']}</td>
-                      <td>{$mom['stratum']}</td>
+                      {*<td>{$mom['stratum']}</td>*}
                       <td>
                         {if $mom['selected'] == 0}
                           <button id="assignMomService" class="btn btn-default assignMomService" data-idmom="{$mom['id_customer']}" data-service="{$mom['service']}">

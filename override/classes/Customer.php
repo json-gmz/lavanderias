@@ -98,8 +98,8 @@ class Customer extends CustomerCore
                       a.`phone`,
                       a.`phone_mobile`,
                       a.`vat_number`,
-                      a.`dni`,
-                      a.`stratum`
+                      -- a.`stratum`,
+                      a.`dni`
                     FROM `' . _DB_PREFIX_ . 'address` a
                     LEFT JOIN `' . _DB_PREFIX_ . 'country` co ON (a.`id_country` = co.`id_country`)
                     LEFT JOIN `' . _DB_PREFIX_ . 'country_lang` cl ON (co.`id_country` = cl.`id_country`)
