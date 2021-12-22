@@ -215,19 +215,20 @@
                   </div>
                 </div>
                 {$hook_create_account_form nofilter}
-                <div class="form-group row hidden-log">
-                    <label class="col-md-3 form-control-label"></label>
-                    <div class="col-md-6">
-                          <span class="custom-checkbox">
-                            <input name="terms" id="terms" type="checkbox" value="1">
-                            <span><i class="material-icons checkbox-checked"></i></span>
-                            <label for="terms">
-                              Acepto que he leído y entiendo los <a id="link-cms-page-3-2" class="cms-page-link" target="_blank" href="/content/3-terminos-y-condiciones-de-uso">términos y condiciones</a> del servicio junto con la <a id="link-cms-page-3-2" class="cms-page-link" target="_blank" href="/content/2-politica-de-privacidad">política de tratamiento de datos personales</a>.
-                            </label>
-                          </span>
-                    </div>
-                    <div class="col-md-3 form-control-comment">
-                    </div>
+                <div class="form-group row ">
+                  <label class="col-md-3 form-control-label"></label>
+                  <div class="col-md-6">
+                    <span class="custom-checkbox">
+                      <div class="col-xs-2 col-sm-2"><input name="terms" id="terms" type="checkbox" value="1">
+                      <span><i class="material-icons checkbox-checked"></i></span></div>
+                      <div class="col-xs-10 col-sm-10">
+                        <label for="terms">
+                          Acepto que he leído y entiendo los <a id="link-cms-page-3-2" class="cms-page-link" target="_blank" href="/content/3-terminos-y-condiciones-de-uso">términos y condiciones</a> del servicio junto con la <a id="link-cms-page-3-2" class="cms-page-link" target="_blank" href="/content/2-politica-de-privacidad">política de tratamiento de datos personales</a>.
+                        </label>
+                      </div>
+                    </span>
+                  </div>
+                  <div class="col-md-3 form-control-comment"></div>
                 </div>
               {/block}
             </section>
