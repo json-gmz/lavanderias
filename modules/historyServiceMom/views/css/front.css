@@ -30,8 +30,8 @@
 }
 
 .header-table{
-    background: #42F5BC;
-    border: #42F5BC solid 1px;
+    background: #f3283d;
+    border: #f3283d solid 1px;
     color: #fff;
 }
 
@@ -57,7 +57,7 @@
 
 .button_modal{
     padding: 9px 30px 10px;
-    background-color: #42F5BC;
+    background-color: #f3283d;
     text-align: center;
     color: white;
     border: none;

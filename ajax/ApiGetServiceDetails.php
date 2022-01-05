@@ -20,7 +20,7 @@ if ( isset($_POST) && !empty($_POST) && $_POST["id_order"] != "" && $_POST["serv
             CONCAT(a.address1,", ",a.address2) as address,
             a.city,
             a.phone,
-            -- a.stratum,
+            /*a.stratum,*/
             os.id_order_state,
             os.`name` as name_state,
             od.product_name,
