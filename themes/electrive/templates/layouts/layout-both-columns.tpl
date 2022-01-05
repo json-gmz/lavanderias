@@ -201,6 +201,16 @@
       $("#mom-form").find(".hidden-log").hide();
 
       if (id_group == 10) {
+        $("#search_widget").remove();
+        $("#_desktop_cart").remove();
+        $("#_desktop_top_menu").remove();
+        $(".hcom").remove();
+        $(".wishl").remove();
+        $(".head-left").remove();
+        $(".rightmenu").remove();
+      }
+
+      if (id_group == 10) {
           $("#nav-message-alert").show();
           $(".card_user").hide();
           $(".addresses-footer").hide();

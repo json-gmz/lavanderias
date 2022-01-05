@@ -31,6 +31,7 @@
 {block name='header_nav'}
 <nav class="header-nav">
   <div class="container">
+    <input type="hidden" value="{{$customer.id_default_group}}" id="id_group" />
     <div class="row bo-bottom">
           <div class="col-lg-5 col-md-4 col-sm-4 hidden-md-down head-left">
               {hook h='displayNav1'}
@@ -44,10 +45,18 @@
       </div>
 </nav>
 
+<nav class="header-nav" id="nav-message-alert">
+  <center>
+    <i class="fa fa-exclamation-circle"></i>
+    Recuerda cerrar tu sesión cuando no estés trabajando, así, evitaremos incumplirle a nuestros clientes
+    <i class="fa fa-exclamation-circle"></i>
+  </center>
+</nav>
+
 {/block}
 
 {block name='header_top'}
-
+<input id="customerLoggedId" name="customerLoggedId" type="hidden" value="{$customer.id}" />
 <div class="allhead">
   <div class="header-top">
   <div class="container">
