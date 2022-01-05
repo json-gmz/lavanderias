@@ -3713,7 +3713,7 @@ section.left-product.wbfepro {
     display: none!important;
 }
 
-.page-my-account #content .links #actdec-link {
+.page-my-account #content .links .actdec-link {
     text-align: center;
     display: inline-block;
     font-size: 1rem;
@@ -3724,11 +3724,11 @@ section.left-product.wbfepro {
     margin-bottom: 1.875rem;
 }
 
-.page-my-account #content .links #actdec-link:hover {
+.page-my-account #content .links .actdec-link:hover {
     color: #ffcc00;
 }
 
-.page-my-account #content .links #actdec-link span.link-item {
+.page-my-account #content .links .actdec-link span.link-item {
     display: block;
     height: 100%;
     background-color: #fff;
@@ -3739,7 +3739,7 @@ section.left-product.wbfepro {
     letter-spacing: 1px;
 }
 
-.page-my-account #content .links #actdec-link i {
+.page-my-account #content .links .actdec-link i {
     display: block;
     font-size: 30px;
     width: 100%;

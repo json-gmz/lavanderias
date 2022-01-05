@@ -32,6 +32,20 @@
   <div class="row">
     <div class="links">
 
+      <span class="col-lg-4 col-md-6 col-sm-6 col-xs-12 actdec-link" id="btn-details-moves" data-toggle="modal" data-target="#modalHistoryMovesBalance">
+        <span class="link-item">
+          <i class="material-icons">&#xe263;</i>
+          <span class="title_balance">{l s='Balance Score: ' d='Shop.Theme.Customeraccount'}</span>
+          {if $customer.balance|string_format:"%.3f" == 0}
+            <span class="balance-style balance_equal">{{$customer.balance|string_format:"%.0f"}}</span>
+          {else if $customer.balance|string_format:"%.3f" > 0}
+            <span class="balance-style balance_positive">{{$customer.balance|string_format:"%.0f"}}</span>
+          {else}
+            <span class="balance-style balance_negative">{{$customer.balance|string_format:"%.0f"}}</span>
+          {/if}
+        </span>
+      </span>
+
       <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="identity-link" href="{$urls.pages.identity}">
         <span class="link-item">
           <i class="material-icons">&#xE853;</i>
@@ -91,7 +105,7 @@
         </a>
       {/if}
 
-      <span class="col-lg-4 col-md-6 col-sm-6 col-xs-12 panel-desactive" id="actdec-link" href="#" name="switch-log">
+      <span class="col-lg-4 col-md-6 col-sm-6 col-xs-12 panel-desactive actdec-link" id="actdec-link" name="switch-log">
         <span class="link-item">
           <i class="material-icons">&#xe035;</i>
           {l s='Activate/Deactivate Service Availability' d='Shop.Theme.Customeraccount'}
@@ -131,7 +145,7 @@
         </div>
         <div class="modal-body mx-1">
           <div class="md-form mb-5">
-            <table class="history_moves_balance" width="100%" cellpadding="8" cellspacing="0">
+            <table class="history_moves_balance" width="100%" cellpadding="4">
               <thead>
                 <tr class="header-table">
                   <th class="move_balance header title-text">Orden</th>
