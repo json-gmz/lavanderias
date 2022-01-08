@@ -47,4 +47,9 @@
     >
         {l s='Continue' d='Shop.Theme.Actions'}
     </button>
+    <script>
+      $(function() {
+        $(".card_mom").hide();
+      });
+    </script>
 {/block}

@@ -6,6 +6,54 @@
     <language>es</language>
      <atom:link href="https://www.prestashop.com/es/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Diez tendencias claves eCommerce para 2022</title>
+    <link>https://www.prestashop.com/es/blog/ecommerce-tendencias-2022</link>
+    <description>La pandemia permitió que el comercio electrónico avance de forma espectacular.</description>
+     <pubDate>Tue, 04 Jan 2022 11:34:12 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/ecommerce-tendencias-2022</guid>
+  </item>
+  <item>
+    <title>Los mejores módulos para convertir tráfico en ventas esta Navidad</title>
+    <link>https://www.prestashop.com/es/blog/modulos-navidad-prestashop</link>
+    <description>Por motivos obvios la Navidad es el período del año en el que las tiendas online tienen más actividad.</description>
+     <pubDate>Mon, 03 Jan 2022 10:54:17 +0100</pubDate>
+ <dc:creator>Alejandro Ramos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/modulos-navidad-prestashop</guid>
+  </item>
+  <item>
+    <title>¿Cómo puedo atraer nuevos usuarios a mi tienda online?</title>
+    <link>https://www.prestashop.com/es/blog/estrategias-atraccion-clientes</link>
+    <description>El comercio electrónico ha crecido mucho en la última década.</description>
+     <pubDate>Wed, 29 Dec 2021 12:50:20 +0100</pubDate>
+ <dc:creator>Sandra Bernad Martínez</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/estrategias-atraccion-clientes</guid>
+  </item>
+  <item>
+    <title>La sostenibilidad, un factor con cada vez más peso para los compradores</title>
+    <link>https://www.prestashop.com/es/blog/sostenibilidad-ecommerce</link>
+    <description>La mayoría de los clientes potenciales de una tienda online saben que la sostenibilidad es un factor de vital importancia. A mayor rapidez de entrega, más contaminación.</description>
+     <pubDate>Wed, 29 Dec 2021 10:18:06 +0100</pubDate>
+ <dc:creator>Jorge González Marcos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/sostenibilidad-ecommerce</guid>
+  </item>
+  <item>
+    <title>Live Streaming eCommerce, la revolución del comercio electrónico</title>
+    <link>https://www.prestashop.com/es/blog/live-streaming-ecommerce</link>
+    <description>El COVID-19 ha supuesto un auténtico shock a nivel mundial, ya no solo a nivel de relaciones o en la manera en la que realizamos algunas tareas, también ha tocado de pleno tanto al comercio tradici</description>
+     <pubDate>Wed, 29 Dec 2021 09:59:51 +0100</pubDate>
+ <dc:creator>Sandra Bernad Martínez</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/live-streaming-ecommerce</guid>
+  </item>
+  <item>
+    <title>Desarrolla una estrategia de contenido para que tu tienda destaque estas navidades</title>
+    <link>https://www.prestashop.com/es/blog/tiktok-strategy-ecommerce</link>
+    <description>Ya sabes que diciembre es el mes de compras clave para las tiendas online.</description>
+     <pubDate>Tue, 21 Dec 2021 11:40:42 +0100</pubDate>
+ <dc:creator>Simon Fowler</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/tiktok-strategy-ecommerce</guid>
+  </item>
+  <item>
     <title>Nueve consejos para preparar las rebajas</title>
     <link>https://www.prestashop.com/es/blog/nueve-consejos-rebajas</link>
     <description>Descripción: Comercio electrónico: ¿cómo prepararse eficazmente para las rebajas? ¿Qué módulos de comercio electrónico debo utilizar? Descubre nuestros 9 consejos de expertos.</description>
@@ -36,54 +84,6 @@
      <pubDate>Thu, 02 Dec 2021 17:29:13 +0100</pubDate>
  <dc:creator>PrestaShop Team</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/es/blog/visibilidad-google-ecommerce</guid>
-  </item>
-  <item>
-    <title>Qué es la API de conversiones de Facebook y por qué es importante para tu eCommerce</title>
-    <link>https://www.prestashop.com/es/blog/entender-facebook-api-conversion</link>
-    <description>No hay duda de que vivimos en un mundo donde la data es todo, y eso no va a cambiar.</description>
-     <pubDate>Thu, 02 Dec 2021 09:41:03 +0100</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/es/blog/entender-facebook-api-conversion</guid>
-  </item>
-  <item>
-    <title>¿Qué beneficios puede ofrecer un método de pago aplazado para tu eCommerce?</title>
-    <link>https://www.prestashop.com/es/blog/bnpl-clearpay</link>
-    <description>El aumento en los últimos años de los métodos de pago aplazados refleja el interés por parte de los consumidores en estas nuevas soluciones que ofrecen agilidad y flexibilidad.</description>
-     <pubDate>Tue, 30 Nov 2021 11:48:32 +0100</pubDate>
- <dc:creator>Nacho González</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/es/blog/bnpl-clearpay</guid>
-  </item>
-  <item>
-    <title>Cómo estructurar las categorías de tu eCommerce para mejorar el SEO</title>
-    <link>https://www.prestashop.com/es/blog/estructurar-categorias-seo</link>
-    <description>La primera parte de esta serie trató sobre cómo podemos identificar las mejores palabras clave para tu eCommerce:</description>
-     <pubDate>Tue, 30 Nov 2021 11:06:58 +0100</pubDate>
- <dc:creator>Jorge González Marcos</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/es/blog/estructurar-categorias-seo</guid>
-  </item>
-  <item>
-    <title>El caso de éxito de Ubricarmotos, la plataforma especializada en motos de Cádiz</title>
-    <link>https://www.prestashop.com/es/blog/personalizacion-satisfaccion-exito-ecommerce</link>
-    <description>Hace unos meses, cuando el mundo todavía no se desconfinaba del todo conocimos a Antonio Borrego, director comercial de Ubricarmotos.</description>
-     <pubDate>Tue, 30 Nov 2021 10:43:44 +0100</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/es/blog/personalizacion-satisfaccion-exito-ecommerce</guid>
-  </item>
-  <item>
-    <title>Desafíos en la logística de los eCommerce </title>
-    <link>https://www.prestashop.com/es/blog/desafios-logistica-packlink</link>
-    <description>En 2010, alrededor del 55% de usuarios de internet ent</description>
-     <pubDate>Tue, 23 Nov 2021 17:26:07 +0100</pubDate>
- <dc:creator>Magali Kajingu Enciso</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/es/blog/desafios-logistica-packlink</guid>
-  </item>
-  <item>
-    <title>Módulos PrestaShop para vender más y sacar el máximo partido a tus redes</title>
-    <link>https://www.prestashop.com/es/blog/modulos-redes-sociales-prestashop</link>
-    <description>Las redes sociales se han convertido en uno de los esenciales de nuestro día a día. </description>
-     <pubDate>Wed, 17 Nov 2021 15:09:35 +0100</pubDate>
- <dc:creator>Jorge González Marcos</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/es/blog/modulos-redes-sociales-prestashop</guid>
   </item>
   </channel>
 </rss>

@@ -224,6 +224,8 @@
         $(".card_mom").hide();
         $('#save').prop('disabled', false);
         $("#customer-form").find(".hidden-log").hide();
+        $("#btn-details-moves").hide();
+        $("#actdec-link").hide();
       }
     });
 

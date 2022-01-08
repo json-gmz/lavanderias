@@ -3746,3 +3746,7 @@ section.left-product.wbfepro {
     transition: 0.3s ease;
     margin-bottom: 12px;
 }
+
+#confirm-decline, #others-status, #finalized-status {
+    text-align: center;
+}

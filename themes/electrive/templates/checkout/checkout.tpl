@@ -29,6 +29,7 @@
     {block name='head'}
       {include file='_partials/head.tpl'}
     {/block}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
     <body id="{$page.page_name}" class="{$page.body_classes|classnames} {if isset($WB_mainLayout)}{$WB_mainLayout}{/if} {if isset($WB_darklightLayout)}{$WB_darklightLayout}{/if} {if isset($WB_showDarkLightMenu)}{$WB_showDarkLightMenu}{/if}">
