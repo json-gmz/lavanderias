@@ -42,7 +42,7 @@
       <div class="card noshadow">
         <div class="card-block">
           <h4 class="h5 black addresshead">{l s='Your Delivery Address' d='Shop.Theme.Checkout'}</h4>
-          {$customer.addresses[$cart.id_address_delivery]['formatted'] nofilter}
+          {$js_custom_vars.prestashop.customer.addresses[$cart.id_address_delivery]['formatted'] nofilter}
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@
       <div class="card noshadow">
         <div class="card-block">
           <h4 class="h5 black addresshead">{l s='Your Invoice Address' d='Shop.Theme.Checkout'}</h4>
-          {$customer.addresses[$cart.id_address_invoice]['formatted'] nofilter}
+          {$js_custom_vars.prestashop.customer.addresses[$cart.id_address_invoice]['formatted'] nofilter}
         </div>
       </div>
     </div>
