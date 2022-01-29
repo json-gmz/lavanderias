@@ -139,7 +139,7 @@ class CustomerFormCore extends AbstractForm
         $this->validateFieldLength('firstname', 255, $this->getFirstNameMaxLengthViolationMessage());
         $this->validateFieldLength('lastname', 255, $this->getLastNameMaxLengthViolationMessage());
 
-        $this->validateFieldLength('dni', 10, $this->getDniMaxLengthViolationMessage());
+        $this->validateFieldLength('dni', 11, $this->getDniMaxLengthViolationMessage());
         $this->validateFieldMinimunLength('dni', 5, $this->getDniMaxLengthViolationMessage());
     }
 
@@ -294,7 +294,7 @@ class CustomerFormCore extends AbstractForm
     protected function getDniMaxLengthViolationMessage()
     {
         return $this->translator->trans(
-           'El campo %1$s debe tener entre 5 y 10 caracteres',
+           'El campo debe tener entre 5 y 11 caracteres',
             array('dni', 8),
             'Shop.Notifications.Error'
         );

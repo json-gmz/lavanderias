@@ -6,6 +6,22 @@
     <language>es</language>
      <atom:link href="https://www.prestashop.com/es/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>¿Qué puede aportar un Test A/B con Google Optimize a tu eCommerce?</title>
+    <link>https://www.prestashop.com/es/blog/ab-test-google-ecommerce</link>
+    <description>Si tienes un negocio, ya sabrás que sí o sí deben estar en Internet para llegar a más gente, darte a conocer y aumentar tus ventas, ¿verdad?</description>
+     <pubDate>Mon, 10 Jan 2022 14:24:12 +0100</pubDate>
+ <dc:creator>Sandra Bernad Martínez</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/ab-test-google-ecommerce</guid>
+  </item>
+  <item>
+    <title>Cómo aprovechar el tráfico de pago en redes sociales para tus ventas</title>
+    <link>https://www.prestashop.com/es/blog/aprovechar-trafico-pago</link>
+    <description>Tu tienda online puede llegar a concentrar muchos compradores en época navideña, pero a veces para atraer más clientes o acceder a un nuevo target, es necesario que salgas a buscarlos.</description>
+     <pubDate>Mon, 10 Jan 2022 13:08:42 +0100</pubDate>
+ <dc:creator>Jorge González Marcos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/aprovechar-trafico-pago</guid>
+  </item>
+  <item>
     <title>Diez tendencias claves eCommerce para 2022</title>
     <link>https://www.prestashop.com/es/blog/ecommerce-tendencias-2022</link>
     <description>La pandemia permitió que el comercio electrónico avance de forma espectacular.</description>
@@ -68,22 +84,6 @@
      <pubDate>Mon, 13 Dec 2021 12:01:05 +0100</pubDate>
  <dc:creator>Jorge González Marcos</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/es/blog/mejores-modulos-seo</guid>
-  </item>
-  <item>
-    <title>Cinco consejos para desarrollar tu negocio a nivel internacional</title>
-    <link>https://www.prestashop.com/es/blog/consejos-internacionalizacion</link>
-    <description>Con Internet, las ventas ya no tienen fronteras.</description>
-     <pubDate>Mon, 13 Dec 2021 10:36:06 +0100</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/es/blog/consejos-internacionalizacion</guid>
-  </item>
-  <item>
-    <title>Visibilidad para el eCommerce en Google: Piensa más allá del SEO y el SEA</title>
-    <link>https://www.prestashop.com/es/blog/visibilidad-google-ecommerce</link>
-    <description>Hay muchas formas de mejorar la visibilidad de tu comercio electrónico en Google.</description>
-     <pubDate>Thu, 02 Dec 2021 17:29:13 +0100</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/es/blog/visibilidad-google-ecommerce</guid>
   </item>
   </channel>
 </rss>

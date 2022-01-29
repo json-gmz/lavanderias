@@ -49,8 +49,8 @@ class HistoryServiceMom extends Module implements WidgetInterface
 
         parent::__construct();
 
-        $this->displayName = $this->l('Historial Servicios Madres');
-        $this->description = $this->l('Modulo del historial de servicios recibidos para el usuario madre');
+        $this->displayName = $this->l('Historial Servicios Lavanderia');
+        $this->description = $this->l('Modulo del historial de servicios recibidos para lavanderia');
 
         $this->confirmUninstall = $this->l('Estas seguro de desintalar este modulo?');
 

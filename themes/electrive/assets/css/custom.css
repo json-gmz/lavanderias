@@ -3750,3 +3750,44 @@ section.left-product.wbfepro {
 #confirm-decline, #others-status, #finalized-status {
     text-align: center;
 }
+
+.loaderSlider {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loaderSaveMom {
+    display: none;
+}
+#loaderSaveMom > .loaderSlider {
+    width: 30px!important;
+    height: 30px!important;
+}
+
+.wb-menu-vertical li.level-1.parent > a::before {
+    display: none!important;
+}
+
+.wb-menu-vertical .icon-drop-mobile {
+    display: none!important;
+}
+
+.wb-menu-vertical ul li.level-1:hover > .menu-dropdown, .wb-menu-vertical ul li.level-2:hover > .menu-dropdown, .wb-menu-vertical ul li.level-3:hover > .menu-dropdown, .wb-menu-vertical ul li.level-4:hover > .menu-dropdown, .wb-menu-vertical ul li.level-5:hover > .menu-dropdown {
+    display: none!important;
+}

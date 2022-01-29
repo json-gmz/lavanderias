@@ -153,8 +153,8 @@
                   <th class="move_balance header title-text">Pago</th>
                   {*<th class="move_balance header title-text">Cantidad</th>*}
                   <th class="move_balance header title-text">Precio Total</th>
-                  <th class="move_balance header title-text">Ganancia Madre</th>
-                  <th class="move_balance header title-text">Balance Madre</th>
+                  <th class="move_balance header title-text">Ganancia</th>
+                  <th class="move_balance header title-text">Balance</th>
                   <th class="move_balance header title-text">Fecha</th>
                   <th class="move_balance header title-text">Comentarios</th>
                 </tr>

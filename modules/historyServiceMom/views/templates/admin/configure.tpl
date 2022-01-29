@@ -24,7 +24,7 @@
 *}
 
 <div class="panel">
-	<h3><i class="icon icon-credit-card"></i> {l s='Historial Servicios Madres' mod='historyServiceMom'}</h3>
+	<h3><i class="icon icon-credit-card"></i> {l s='Historial Servicios Lavanderia' mod='historyServiceMom'}</h3>
 	<p>
 		<strong>{l s='Here is my new generic module!' mod='historyServiceMom'}</strong><br />
 		{l s='Thanks to PrestaShop, now I have a great module.' mod='historyServiceMom'}<br />

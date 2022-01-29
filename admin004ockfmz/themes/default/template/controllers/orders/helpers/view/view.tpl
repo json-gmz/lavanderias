@@ -277,7 +277,7 @@
         <div id="formMomPanel" class="panel">
           <div class="panel-heading">
             <i class="icon-user"></i>
-            {l s='Moms' d='Admin.Global'} {l s='Services' d='Admin.Global'}
+            {l s='Laundry' d='Admin.Global'} {l s='Services' d='Admin.Global'}
           </div>
           <div class="table-responsive">
             <input type="hidden" id="order_num" value="{$order->id}" />

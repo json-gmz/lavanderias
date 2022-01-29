@@ -234,6 +234,7 @@
     $("#balance_score").hide();
     $("#order-slips-link").hide();
     $("#terms-conditions-mothers").hide();
+    $("input[name='vat_number']").parent(".form-group").hide();
 
     var switchStatus = false;  
     var id_group = $("#id_group").val();

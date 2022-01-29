@@ -95,7 +95,7 @@
             <p class="info-text col-lg-6 col-sm-6 col-xs-6 text-left" id="total_price"></p>
          </div>
          <div class="row">
-            <p class="info-text col-lg-6 col-sm-6 col-xs-6 text-right">{l s='Ganancia total madre' d='Shop.Theme.Customeraccount'}</p>
+            <p class="info-text col-lg-6 col-sm-6 col-xs-6 text-right">{l s='Ganancia total' d='Shop.Theme.Customeraccount'}</p>
             <p class="info-text col-lg-6 col-sm-6 col-xs-6 text-left" id="amount_total"></p>
          </div>
          <div class="row">
@@ -129,7 +129,7 @@
                   <th class="product header title-text" width="{$layout.product.width}%">{l s='Servicio' d='Shop.Theme.Customeraccount'}</th>
                   <th class="product header title-text" width="{$layout.tax_code.width}%">{l s='Cantidad' d='Shop.Theme.Customeraccount'}</th>
                   <th class="product header title-text" width="{$layout.tax_code.width}%">{l s='Precio Total' d='Shop.Theme.Customeraccount'}</th>
-                  <th class="product header title-text" width="{$layout.tax_code.width}%">{l s='Ganancia Madre' d='Shop.Theme.Customeraccount'}</th>
+                  <th class="product header title-text" width="{$layout.tax_code.width}%">{l s='Ganancia' d='Shop.Theme.Customeraccount'}</th>
                </tr>
             </thead>
             <tbody id="table-product">

@@ -174,6 +174,11 @@
                 <input type="hidden" name="submitCreate" value="1">
                 <input type="hidden" name="momRegister" value="2">
                 {block "form_buttons"}
+                  <center id="loaderSaveMom">
+                    <div class="loaderSlider"></div>
+                    <br>
+                    <div name="textSaving" id="textSaving">{l s='Guardando....' d='Shop.Theme.Customeraccount'}</div>
+                  </center>
                   <button id="save-mom" class="btn btn-primary form-control-submit float-xs-right" data-link-action="save-customer" type="submit" disabled>
                     {l s='Save' d='Shop.Theme.Actions'}
                   </button>
@@ -297,6 +302,11 @@
     });
   </script>
   <script type="text/javascript">
+    $('#save-mom').click(function(){
+      $('#save-mom').hide();
+      $('#loaderSaveMom').show();
+    });
+
     $('#terms').click(function(){
         if($(this).is(':checked')){
             $('#save').attr("disabled", false);

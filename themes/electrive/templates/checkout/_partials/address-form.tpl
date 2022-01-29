@@ -43,4 +43,13 @@
       {/if}
     </form>
   {/if}
+  <script>
+    $(function() {
+      $("input[name='postcode']").val("000000");
+      $("input[name='postcode']").parents(".form-group").hide();
+      $("input[name='vat_number']").parents(".form-group").hide();
+      $("input[name='company']").parents(".form-group").hide();
+      $("input[name='use_same_address']").parents(".form-group").hide();
+    });
+  </script>
 {/block}
